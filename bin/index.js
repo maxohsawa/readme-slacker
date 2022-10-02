@@ -19,4 +19,5 @@ let data = await readData();
 data = addTitle(data);
 data = removeEmojis(data);
 data = modifyByLine(data);
+
 writeData(data);

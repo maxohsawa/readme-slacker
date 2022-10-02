@@ -1,31 +1,42 @@
-# 🏗️ Log Introduction Messages to Console Using Values Stored in Variables 
+# README-SLACKER
 
-Work with a partner to implement the following user story:
+## Purpose
 
-* As a class member, I want to input data about my name, the number of pets I own, and a fun fact about myself and log that introduction to the console. Then I want to log a message to introduce my partner by reassigning the variables.
+Created to automate a repetitive task at work
 
-## Acceptance Criteria
+## What it does
 
-* It's done when I store a name in a variable called `personName` and this line is logged to the console: "My name is `VALUE_STORED_IN_VARIABLE_NAME`."
+It takes a standardized README.md provided by work and produces a new file called SLACKER.txt which takes the contents of the readme and formats it for pasting into the work Slack
 
-* It's done when I store a number in a variable called `pets` and this line is logged to the console: "I have `VALUE_STORED_IN_VARIABLE_PETS` pet(s)."
+## How to use it
 
-* It's done when I store a fun fact in a variable called `funFact` and this line is logged to the console: "Fun fact: `VALUE_STORED_IN_VARIABLE_FUNFACT`."
+1. Install it globally:
+   `sudo npm install -g .`
+2. Navigate to directory with README.md and run command:
+   `readme-slacker`
+3. A text file called `SLACKER.txt` will be created
+4. The contents of the txt file can be pasted into a Slack post
+5. Slack will detect Slack-specific formatting and will ask if you want to apply them
+6. Select Apply styles
 
-* It's done when I reassign the values of `personName`, `pets`, and `funFact` with my new partner's information and the logs in the console reflect the new values.
+## Features
 
-## 💡 Hints
+- Removes stock emojis
+- Adds title line
+- Adds Slack formatting for bolding the headers
+- Adds class emojis to every
+  - Acceptance Criteria
+  - Expected Behavior
+  - 'Work with a partner to add comments..'
+  - Bonus
 
-How can we combine values using the concatenation operator (`+`) to log a single message to the console?
+## Future
 
-## 🏆 Bonus
+- Add emoji packs
+- Leveraging Slack API to automatically post formatted message
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+## Resources I found useful
 
-* What happens when you concatenate two variables in a single console log using `+`? Is the result what you expected? Why or why not? 
-
-Use [Google](https://www.google.com) or another search engine to research this.
-
----
-
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+- [regexr](https://regexr.com/)
+- [How to match emojis](https://www.freecodecamp.org/news/how-to-use-regex-to-match-emoji-including-discord-emotes/)
+- [How to build a Node command line app](https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs)
