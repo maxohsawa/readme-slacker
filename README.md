@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Created to automate a repetitive task at work
+Created to automate a repetitive task at work. Most likely this will only be useful to me.
 
 ## What it does
 
