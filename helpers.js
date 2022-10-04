@@ -103,5 +103,5 @@ export function modifyByLine(data) {
     }
   }
 
-  return lines.join('\n');
+  return lines.filter((item) => item.length > 1).join('\n');
 }
