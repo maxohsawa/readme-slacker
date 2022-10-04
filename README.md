@@ -13,9 +13,8 @@ It takes a standardized README.md provided by work and produces a new file calle
 1. Install it globally:
    `sudo npm install -g .`
 2. Navigate to directory with README.md and run command:
-   1. for macOS `readme-slacker` command will default to copy formatted text to clipboard
-   2. for Windows `readme-slacker` command will default to creating `SLACKER.txt` file
-   3. using `readme-slacker -f` command will create `SLACKER.txt` file
+   1. using `readme-slacker` command will default to copy formatted text to clipboard
+   2. using `readme-slacker -f` command will create `SLACKER.txt` file
 3. The clipboard or contents of the txt file can be pasted into a Slack post
 4. Slack will detect Slack-specific formatting and will ask if you want to apply them
 5. Select Apply styles
