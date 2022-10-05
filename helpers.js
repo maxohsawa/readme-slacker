@@ -6,7 +6,7 @@ const CLASS_EMOJIS = [
   ':hammer:',
   ':gear:',
   ':snake:',
-  ':glove:',
+  ':boxing_glove:',
   ':crystal_ball:',
   ':staff_of_aesculapius',
   ':bow_and_arrow:',
