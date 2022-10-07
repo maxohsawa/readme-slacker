@@ -47,11 +47,14 @@ export function modifyByLine(data) {
   // iterate through lines
   const lines = data.split('\n');
   for (let i = 0; i < lines.length; i++) {
+    lines[i] = lines[i].trim();
+
     // if the line is '## Acceptance Criteria' then replace following '* ' with class emojis
     if (lines[i] === '## Acceptance Criteria') {
       let emojiNo = 0;
 
       for (let j = i + 1; j < lines.length; j++) {
+        lines[j] = lines[j].trim();
         if (lines[j][0] === '*') {
           lines[j] = CLASS_EMOJIS[emojiNo++] + lines[j].substring(1);
         }
@@ -87,6 +90,7 @@ export function modifyByLine(data) {
     // if the line is '## Bonus' then replace the following '* ' with ':zap:'
     if (lines[i] === '## Bonus') {
       for (let j = i + 1; j < lines.length; j++) {
+        lines[j] = lines[j].trim();
         if (lines[j][0] === '*') {
           lines[j] = ':zap:' + lines[j].substring(1);
 
@@ -97,7 +101,6 @@ export function modifyByLine(data) {
 
     // if header remove hashtag(s) and enclose line in asterisks
     if (lines[i].match(/#️?/)) {
-      lines[i] = lines[i].trim();
       const words = lines[i].split(' ');
       lines[i] = '*' + words.slice(1).join(' ') + '*';
     }
