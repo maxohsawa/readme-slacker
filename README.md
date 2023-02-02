@@ -19,6 +19,12 @@ It takes a standardized README.md provided by work and produces a new file calle
 4. Slack will detect Slack-specific formatting and will ask if you want to apply them
 5. Select Apply styles
 
+## How to apply updates
+
+1. Pull changes from the repository
+2. Uninstall with `sudo npm uninstall -g`
+3. Reinstall with `sudo npm install -g`
+
 ## Features
 
 - Removes stock emojis
