@@ -2,17 +2,17 @@ import fs from 'fs';
 import path, { basename } from 'path';
 
 const CLASS_EMOJIS = [
-  ':shield:',
-  ':hammer:',
-  ':gear:',
-  ':snake:',
-  ':boxing_glove:',
-  ':crystal_ball:',
-  ':staff_of_aesculapius',
-  ':bow_and_arrow:',
-  ':ant:',
-  ':eagle:',
-  ':mechanical_arm:',
+  ':mushroom:',
+  ':sunflower:',
+  ':princess:',
+  ':turtle:',
+  ':star:',
+  ':t-rex:',
+  ':orangutan:',
+  ':potted_plant:',
+  ':feather:',
+  ':banana:',
+  ':volcano:',
 ];
 
 export async function readData() {
