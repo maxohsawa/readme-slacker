@@ -50,7 +50,10 @@ export function modifyByLine(data) {
     lines[i] = lines[i].trim();
 
     // if the line is '## Acceptance Criteria' then replace following '* ' with class emojis
-    if (lines[i] === '## Acceptance Criteria') {
+    if (
+      lines[i] === '## Acceptance Criteria' ||
+      lines[i] === '### Specifications'
+    ) {
       let emojiNo = 0;
 
       for (let j = i + 1; j < lines.length; j++) {
